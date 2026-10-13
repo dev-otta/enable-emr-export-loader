@@ -1,0 +1,18 @@
+# Exclude all folders containing patient data.
+incoming/*
+processed/*
+out/*
+!incoming/.gitkeep
+!processed/.gitkeep
+!out/.gitkeep
+
+# Holds the API key.
+config.env
+
+# The private Python library folder.
+.venv/
+__pycache__/
+
+# Stray spreadsheets anywhere in the tree except the test dump.
+*.xlsx
+!test-data/Test_Facility_Data.xlsx
